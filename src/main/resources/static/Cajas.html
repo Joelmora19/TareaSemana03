@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Bienvenido al arcade de aplicaciones web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="barraMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/barraMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <!-- Barra lateral de arriba -->
+    <header class="header">
+        <nav class="nav">
+            <img src="image_Compu/Logo.jpeg" alt="Logo" width="100"/>
+            <a href="index.html"   class="Logo nav-link">ARCADESHOP</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Consolas.html">Consolas</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Computadoras.html">Computadoras</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Componentes.html">Componentes</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Monitores.html">Monitores</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Nosotros.html">Nosotros</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Cajas.html">cajas</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Servicio_Al_Cliente.html">Servicio al cliente</a></li>
+                <label>search</label><input type="search" name="search" placeholder="Criterio de busqueda"><br/>
+            </ul>
+        </nav>
+    </header>
+    <body>
+
+        <aside id = "barraLateral">
+            <h2>Bienvenido al apartado de Cajas</h2>
+            <p>Aqui podremos encontrar el apartado de cajas, el cual su nombre indica es para poder realizar los pagos</p>
+            <img src="image/datafono.jpg" alt="datafono" width="250"/>
+            <br/>
+            <br/>
+            <h3>Si quiere un servicio express digite su numero de telefono y nosotros te llamamos</h3>
+            <label></label><input type="text" id="text" placeholder="Digite el numero" size="30"/><br/>
+            <br/>
+             <label></label><input type="button" id="button" name="button" value="Confirmar"/><br/>
+        </aside>
+
+        <section id="contenido">
+            <img src="image/Metodos de pago.png" alt="Metodos de pago" width="200"/>
+            <br/>
+            <p>Para seleccionar su metedo de pago digite el rango de edad correspondiente</p>
+            <br/>
+            <label>Edad</label><input type="range" name="ranger" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value"><output>24</output><br/>
+            <br/>
+            <p>Digite la fecha en el que realiza la compra</p>
+            <br/>
+            <label>date</label><input type="date" name="date" min="2021-01-01" max="2023-12-31"><br/>
+            <br/>
+            <label>Aceptas</label><input type="checkbox" id="checkbox"  checked/> terminos y condiciones <br/>
+            <br/>
+            <label></label><input type="button" id="button" name="button" value="Confirmar compra"/><br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/N_ofY9F0lT8" 
+                    title="YouTube video player"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+        </section>
+        <footer id="piePagina">Derechos reservados &COPY; 2023 <address>Cartago, Agua caliente</address> <address>Tel: 11229900</address> </footer>
+    </body>
+</html>
